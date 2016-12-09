@@ -18,6 +18,7 @@
     "bookshelf": "^0.10.2",
     "boom": "^4.2.0",
     "bunyan": "^1.8.5",
+    "github-api": "^2.3.0",
     "good": "^7.1.0",
     "good-console": "^6.2.0",
     "good-squeeze": "^5.0.1",
@@ -26,7 +27,6 @@
     "inert": "^4.0.3",
     "knex": "^0.12.6",
     "lodash": "^4.17.2",
-    "path": "^0.12.7",
     "pg": "^6.1.0",
     "sqlite3": "^3.1.8",
     "vision": "^4.1.1"
@@ -45,6 +45,7 @@
     "clean": "rm -rf node_modules",
     "start": "node bin/www",
     "start:watch": "./node_modules/.bin/nodemon bin/www",
+    "start:debug": "node debug bin/www",
     "db:migrate": "./node_modules/.bin/knex migrate:latest --knexfile ./lib/knexfile.js",
     "db:seed": "./node_modules/.bin/knex seed:run --knexfile ./lib/knexfile.js",
     "db:reset": "rm -rf lib/db/data/*.sqlite3 && npm run db:migrate && npm run db:seed",
