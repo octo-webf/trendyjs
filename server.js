@@ -34,23 +34,6 @@ server.register([
       documentationPath: '/api/documentation'
     }
   },
-  {
-    register: require('good'),
-    options: {
-      reporters: {
-        console: [{
-          module: 'good-squeeze',
-          name: 'Squeeze',
-          args: [{
-            response: '*',
-            log: '*'
-          }]
-        }, {
-          module: 'good-console'
-        }, 'stdout']
-      }
-    }
-  }
 ], (err) => {
   if (err) logger.error(err)
 });
