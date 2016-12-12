@@ -437,6 +437,10 @@ cliui@^3.0.3:
     strip-ansi "^3.0.1"
     wrap-ansi "^2.0.0"
 
+clone@1.0.x:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.2.tgz#260b7a99ebb1edfe247538175f783243cb19d149"
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -617,7 +621,7 @@ duplexer@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
 
-duplexify@^3.1.2, duplexify@^3.2.0:
+duplexify@^3.2.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/duplexify/-/duplexify-3.5.0.tgz#1aa773002e1578457e9d9d4a50b0ccaaebcbd604"
   dependencies:
@@ -635,12 +639,6 @@ ecc-jsbn@~0.1.1:
 end-of-stream@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/end-of-stream/-/end-of-stream-1.0.0.tgz#d4596e702734a93e40e9af864319eabd99ff2f0e"
-  dependencies:
-    once "~1.3.0"
-
-end-of-stream@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/end-of-stream/-/end-of-stream-1.1.0.tgz#e9353258baa9108965efc41cb0ef8ade2f3cfb07"
   dependencies:
     once "~1.3.0"
 
@@ -889,10 +887,6 @@ extsprintf@1.0.2:
 fast-levenshtein@~2.0.4:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.5.tgz#bd33145744519ab1c36c3ee9f31f08e9079b67f2"
-
-fast-safe-stringify@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/fast-safe-stringify/-/fast-safe-stringify-1.1.0.tgz#4ca98c502e00c387ca1b0e7184e955718bf512e8"
 
 figures@^1.3.5:
   version "1.7.0"
@@ -1156,31 +1150,6 @@ globby@^5.0.0:
     object-assign "^4.0.1"
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
-
-good-console@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/good-console/-/good-console-6.2.0.tgz#b385098aa5c0fd3b36d9067b68a35cfc494fc9ea"
-  dependencies:
-    hoek "4.x.x"
-    joi "8.1.x"
-    json-stringify-safe "5.0.x"
-    moment "2.15.x"
-
-good-squeeze@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/good-squeeze/-/good-squeeze-5.0.1.tgz#2bf53c28a77c072b18a64691f6e862cd68ea0891"
-  dependencies:
-    fast-safe-stringify "1.1.0"
-    hoek "4.x.x"
-
-good@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/good/-/good-7.1.0.tgz#9e05ad24c58a11b71cf5081700f3778db0b22c1c"
-  dependencies:
-    hoek "4.x.x"
-    joi "10.x.x"
-    oppsy "1.x.x"
-    pumpify "1.3.x"
 
 got@^3.2.0:
   version "3.3.1"
@@ -1620,15 +1589,6 @@ joi@6.x.x:
     moment "2.x.x"
     topo "1.x.x"
 
-joi@8.1.x:
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-8.1.1.tgz#2d8b52a5d909d217ed47248577eefe8b1798f48f"
-  dependencies:
-    hoek "4.x.x"
-    isemail "2.x.x"
-    moment "2.x.x"
-    topo "2.x.x"
-
 joi@9.0.4:
   version "9.0.4"
   resolved "https://registry.yarnpkg.com/joi/-/joi-9.0.4.tgz#88d64890915abeb127cd757027116d50df3e68df"
@@ -1689,7 +1649,7 @@ json-stable-stringify@^1.0.0, json-stable-stringify@^1.0.1:
   dependencies:
     jsonify "~0.0.0"
 
-json-stringify-safe@5.0.x, json-stringify-safe@~5.0.1:
+json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
 
@@ -1864,7 +1824,7 @@ lodash.restparam@^3.0.0:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
 
-lodash@^4.0.0, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.3.0, lodash@^4.6.0:
+lodash@4.x, lodash@^4.0.0, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.3.0, lodash@^4.6.0:
   version "4.17.2"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.2.tgz#34a3055babe04ce42467b607d700072c7ff6bf42"
 
@@ -1966,7 +1926,7 @@ mocha@^3.2.0:
     mkdirp "0.5.1"
     supports-color "3.1.2"
 
-moment@2.15.x, moment@2.x.x, moment@^2.10.6:
+moment@2.x.x, moment@^2.10.6:
   version "2.15.2"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.15.2.tgz#1bfdedf6a6e345f322fe956d5df5bd08a8ce84dc"
 
@@ -2023,6 +1983,13 @@ nigel@2.x.x:
   dependencies:
     hoek "4.x.x"
     vise "2.x.x"
+
+node-cache@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/node-cache/-/node-cache-4.1.0.tgz#2a6a66460bf063781138206988237ec02c135157"
+  dependencies:
+    clone "1.0.x"
+    lodash "4.x"
 
 node-pre-gyp@^0.6.29, node-pre-gyp@~0.6.31:
   version "0.6.32"
@@ -2105,7 +2072,7 @@ object.omit@^2.0.0:
     for-own "^0.1.4"
     is-extendable "^0.1.1"
 
-once@1.x, once@^1.3.0, once@^1.3.1:
+once@1.x, once@^1.3.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
   dependencies:
@@ -2124,13 +2091,6 @@ onetime@^1.0.0:
 ono@^2.0.1, ono@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ono/-/ono-2.2.1.tgz#722fc7e8429ff733887a80e743fb38bbd985b003"
-
-oppsy@1.x.x:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/oppsy/-/oppsy-1.0.2.tgz#98014cd6967653a83cfffa554226dc90050baad4"
-  dependencies:
-    hoek "4.x.x"
-    items "2.x.x"
 
 optimist@^0.6.1:
   version "0.6.1"
@@ -2350,21 +2310,6 @@ pseudomap@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
 
-pump@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/pump/-/pump-1.0.1.tgz#f1f1409fb9bd1085bbdb576b43b84ec4b5eadc1a"
-  dependencies:
-    end-of-stream "^1.1.0"
-    once "^1.3.1"
-
-pumpify@1.3.x:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/pumpify/-/pumpify-1.3.5.tgz#1b671c619940abcaeac0ad0e3a3c164be760993b"
-  dependencies:
-    duplexify "^3.1.2"
-    inherits "^2.0.1"
-    pump "^1.0.0"
-
 punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
@@ -2409,10 +2354,11 @@ readable-stream@^1.1.12:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@^2.0.0, readable-stream@~2.0.0, readable-stream@~2.0.5:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
+readable-stream@^2.0.0, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.2, readable-stream@~2.1.4:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.1.5.tgz#66fa8b720e1438b364681f2ad1a63c618448c9d0"
   dependencies:
+    buffer-shims "^1.0.0"
     core-util-is "~1.0.0"
     inherits "~2.0.1"
     isarray "~1.0.0"
@@ -2420,11 +2366,10 @@ readable-stream@^2.0.0, readable-stream@~2.0.0, readable-stream@~2.0.5:
     string_decoder "~0.10.x"
     util-deprecate "~1.0.1"
 
-"readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.2, readable-stream@~2.1.4:
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.1.5.tgz#66fa8b720e1438b364681f2ad1a63c618448c9d0"
+readable-stream@~2.0.0, readable-stream@~2.0.5:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
   dependencies:
-    buffer-shims "^1.0.0"
     core-util-is "~1.0.0"
     inherits "~2.0.1"
     isarray "~1.0.0"
