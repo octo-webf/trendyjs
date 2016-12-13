@@ -26,6 +26,6 @@ describe('Unit | Route | Services', function () {
         expect(response.statusCode).to.equal(200);
       });
     });
-  })
+  });
 
 });
