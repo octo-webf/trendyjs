@@ -51,7 +51,7 @@
     "db:migrate": "./node_modules/.bin/knex migrate:latest --knexfile ./lib/knexfile.js",
     "db:seed": "./node_modules/.bin/knex seed:run --knexfile ./lib/knexfile.js",
     "db:reset": "rm -rf lib/db/data/*.sqlite3 && npm run db:migrate && npm run db:seed",
-    "test": "NODE_ENV=test npm run db:reset && NODE_ENV=test ./node_modules/.bin/mocha --recursive",
+    "test": "NODE_ENV=test npm run db:migrate && NODE_ENV=test ./node_modules/.bin/mocha --recursive",
     "test:watch": "npm test -- --watch",
     "check": "curl http://localhost:3000/api/services",
     "coverage": "NODE_ENV=test npm run db:reset && NODE_ENV=test ./node_modules/.bin/istanbul cover _mocha -- --recursive",
