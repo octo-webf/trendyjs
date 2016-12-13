@@ -1,7 +1,7 @@
 {
   "name": "trendyjs",
   "version": "1.0.0",
-  "description": "Trendy.js is an Open API about JS libs, frameworks and node modules trends.",
+  "description": "TrendyJS is an Open API about JS libs, frameworks and node modules trends.",
   "main": "index.js",
   "repository": {
     "type": "git",
