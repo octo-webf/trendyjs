@@ -1,3 +1,3 @@
 const logger = require('../lib/infrastructure/logger');
 
-logger.info('Yeah !');
+logger.debug('Yeah !');
