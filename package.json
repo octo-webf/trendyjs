@@ -43,7 +43,7 @@
   "scripts": {
     "help": "./scripts/help.sh",
     "clean": "rm -rf node_modules",
-    "postinstall": "npm run db:reset",
+    "postinstall": "npm run db:migrate",
     "start": "node bin/www",
     "start:watch": "./node_modules/.bin/nodemon bin/www | ./node_modules/.bin/bunyan",
     "start:debug": "node debug bin/www",
