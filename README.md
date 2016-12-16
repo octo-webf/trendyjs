@@ -1,6 +1,7 @@
 # TrendyJS
 
 [![Build Status](https://travis-ci.org/octo-web-front-end-tribe/trendyjs.svg?branch=master)](https://travis-ci.org/octo-web-front-end-tribe/trendyjs)
+[![Coverage Status](https://coveralls.io/repos/github/octo-web-front-end-tribe/trendyjs/badge.svg?branch=master)](https://coveralls.io/github/octo-web-front-end-tribe/trendyjs?branch=master)
 
 TrendyJS is an Open API about JS libs, frameworks and node modules trends.
 
