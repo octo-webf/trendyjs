@@ -1,0 +1,20 @@
+{
+  "name": "trendyjs",
+  "scripts": {
+  },
+  "env": {
+    "GITHUB_API_TOKEN": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
