@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "has_synonyms": true,
+      "is_moderator_only": false,
+      "is_required": false,
+      "count": 211800,
+      "name": "angularjs"
+    },
+    {
+      "has_synonyms": true,
+      "is_moderator_only": false,
+      "is_required": false,
+      "count": 28529,
+      "name": "angular2"
+    },
+    {
+      "has_synonyms": false,
+      "is_moderator_only": false,
+      "is_required": false,
+      "count": 1653,
+      "name": "aurelia"
+    }
+  ]
+}

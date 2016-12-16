@@ -1,0 +1,20 @@
+{
+  "angular": {
+    "downloads": 172235,
+    "start": "2016-12-09",
+    "end": "2016-12-15",
+    "package": "angular"
+  },
+  "angular2": {
+    "downloads": 11289,
+    "start": "2016-12-09",
+    "end": "2016-12-15",
+    "package": "angular2"
+  },
+  "aurelia-cli": {
+    "downloads": 3666,
+    "start": "2016-12-09",
+    "end": "2016-12-15",
+    "package": "aurelia-cli"
+  }
+}
