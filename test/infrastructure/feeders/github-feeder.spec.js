@@ -1,9 +1,9 @@
 const chai = require('chai');
+const sinon = require('sinon');
 const expect = chai.expect;
 const GithubFeeder = require('../../../lib/infrastructure/feeders/github-feeder');
 const Service = require('../../../lib/domain/service');
 const GithubClient = require('../../../lib/infrastructure/github-client');
-const Sinon = require('sinon');
 
 function buildService(githubId) {
   return new Service({
@@ -34,7 +34,7 @@ describe('Unit | Feeder | GithubFeeder', function () {
 
     it('should add Github data to Service objects', function (done) {
       //given
-      stub = Sinon.stub(GithubClient, 'getRepo', () => {
+      stub = sinon.stub(GithubClient, 'getRepo', () => {
         return { getDetails(cb) {
           return new Promise((resolve) => {
             let result = {};
@@ -60,7 +60,7 @@ describe('Unit | Feeder | GithubFeeder', function () {
 
     it('should reject with error if thrown by GitHub client', function (done) {
       // given
-      stub = Sinon.stub(GithubClient, 'getRepo', () => {
+      stub = sinon.stub(GithubClient, 'getRepo', () => {
         return { getDetails() {
           return new Promise((resolve, reject) => {
             reject(new Error('expected error'));
